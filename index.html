@@ -1,92 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amirul Azim | Software Engineer</title>
-  <style>
-    :root {
-      --bg: #1e1e2f;
-      --text: #f0f0f0;
-      --primary: #3b82f6;
-      --accent: #60a5fa;
-      --card: #2c2c3c;
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    header, section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-    h1, h2, h3 {
-      color: var(--primary);
-    }
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 1.8rem; margin-top: 2rem; }
-    .highlight {
-      color: var(--accent);
-      font-weight: bold;
-    }
-    .project, .skill-section {
-      background: var(--card);
-      padding: 1rem;
-      border-radius: 12px;
-      margin-top: 1rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .contact a {
-      display: inline-block;
-      margin-right: 1rem;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    @media (max-width: 600px) {
-      h1 { font-size: 2rem; }
-      h2 { font-size: 1.5rem; }
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-  <header>
-    <h1>Amirul Azim</h1>
-    <p><strong>Software Engineer</strong> based in George Town, Malaysia</p>
+<body class="bg-gray-900 text-gray-100 font-sans">
+  <header class="max-w-4xl mx-auto px-4 py-10">
+    <h1 class="text-4xl font-bold text-blue-400">Amirul Azim</h1>
+    <p class="text-lg">Software Engineer based in George Town, Malaysia</p>
   </header>
 
-  <section>
-    <h2>👨‍💻 About Me</h2>
-    <p>
+  <section class="max-w-4xl mx-auto px-4">
+    <h2 class="text-2xl font-semibold text-blue-300 mb-4">👨‍💻 About Me</h2>
+    <p class="mb-4">
       Hi, I’m Amirul Azim, a Computer Science graduate with a specialization in Distributed Systems & Security.
       I’m passionate about building scalable and secure applications across mobile and web platforms.
     </p>
-    <p>
-      I’ve worked with organizations like <span class="highlight">Outlier AI (Scale AI)</span>, 
-      <span class="highlight">CheckpointSpot</span>, and <span class="highlight">Web Bytes</span>, 
+    <p class="mb-4">
+      I’ve worked with organizations like <span class="text-blue-400 font-medium">Outlier AI (Scale AI)</span>,
+      <span class="text-blue-400 font-medium">CheckpointSpot</span>, and <span class="text-blue-400 font-medium">Web Bytes</span>,
       building production-ready apps for clients like 7-Eleven and Marrybrown.
     </p>
-    <p>
+    <p class="mb-4">
       My experience includes cross-platform development, AI-assisted programming, and secure system design.
       I love solving complex problems, learning new tools, and working in agile teams.
     </p>
   </section>
 
-  <section>
-    <h2>🛠️ Tech Stack & Skills</h2>
-    <div class="skill-section">
+  <section class="max-w-4xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-semibold text-blue-300 mb-4">🛠️ Tech Stack & Skills</h2>
+    <div class="bg-gray-800 p-4 rounded-xl space-y-2">
       <p><strong>Languages:</strong> Dart, Java, C++, C#, Swift, TypeScript, JavaScript, SQL</p>
       <p><strong>Mobile Development:</strong> Flutter, React Native, Native Android (Java)</p>
       <p><strong>Web Development:</strong> React.js, Vue.js, Node.js, Tailwind CSS, REST APIs</p>
@@ -95,47 +42,47 @@
     </div>
   </section>
 
-  <section>
-    <h2>🚀 Projects</h2>
+  <section class="max-w-4xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-semibold text-blue-300 mb-4">🚀 Projects</h2>
 
-    <div class="project">
-      <h3>CheckpointSpot App (React Native)</h3>
-      <p>A sports event app where users can discover and register for upcoming events, view standings, receive e-certs, and purchase merchandise.</p>
-      <p><strong>My Role:</strong> Maintained and enhanced the app with my supervisor — we were the only devs with prior mobile experience in the startup.</p>
+    <div class="bg-gray-800 p-4 rounded-xl mb-4">
+      <h3 class="text-xl font-bold text-blue-400">CheckpointSpot App (React Native)</h3>
+      <p class="mt-2">A sports event app where users can discover and register for upcoming events, view standings, receive e-certs, and purchase merchandise.</p>
+      <p class="mt-1"><strong>My Role:</strong> Maintained and enhanced the app with my supervisor — we were the only devs with prior mobile experience in the startup.</p>
     </div>
 
-    <div class="project">
-      <h3>HWC Coffee (Flutter)</h3>
-      <p>Loyalty app for Malaysia’s first specialty coffee chain. Features include digital vouchers, point tracking, transaction history, and promo notifications.</p>
-      <p><strong>My Role:</strong> Built frontend components, maintained the app, and fixed bugs collaboratively with my team of 3.</p>
+    <div class="bg-gray-800 p-4 rounded-xl mb-4">
+      <h3 class="text-xl font-bold text-blue-400">HWC Coffee (Flutter)</h3>
+      <p class="mt-2">Loyalty app for Malaysia’s first specialty coffee chain. Features include digital vouchers, point tracking, transaction history, and promo notifications.</p>
+      <p class="mt-1"><strong>My Role:</strong> Built frontend components, maintained the app, and fixed bugs collaboratively with my team of 3.</p>
     </div>
 
-    <div class="project">
-      <h3>Wonders Café (Flutter)</h3>
-      <p>Mobile app for a fully contactless café: order food, pay, book events, redeem rewards, and manage loyalty points.</p>
-      <p><strong>My Role:</strong> Frontend development, payment flow, loyalty system, and event booking with a 3-person team.</p>
+    <div class="bg-gray-800 p-4 rounded-xl mb-4">
+      <h3 class="text-xl font-bold text-blue-400">Wonders Café (Flutter)</h3>
+      <p class="mt-2">Mobile app for a fully contactless café: order food, pay, book events, redeem rewards, and manage loyalty points.</p>
+      <p class="mt-1"><strong>My Role:</strong> Frontend development, payment flow, loyalty system, and event booking with a 3-person team.</p>
     </div>
 
-    <div class="project">
-      <h3>Marrybrown Mobile App (Native Android)</h3>
-      <p>Contactless ordering, birthday perks, loyalty rewards and promo tracking for Marrybrown Malaysia.</p>
-      <p><strong>My Role:</strong> Supported app maintenance and resolved production bugs.</p>
+    <div class="bg-gray-800 p-4 rounded-xl mb-4">
+      <h3 class="text-xl font-bold text-blue-400">Marrybrown Mobile App (Native Android)</h3>
+      <p class="mt-2">Contactless ordering, birthday perks, loyalty rewards and promo tracking for Marrybrown Malaysia.</p>
+      <p class="mt-1"><strong>My Role:</strong> Supported app maintenance and resolved production bugs.</p>
     </div>
 
-    <div class="project">
-      <h3>Codebase Migration: Native Android → Flutter</h3>
-      <p>Led R&D and progressive rewrite of the company's existing Android app to Flutter, enabling faster development and cross-platform support.</p>
-      <p>Worked closely with the team to refactor key modules, adapt native components to Flutter, and ensure consistent performance across Android and iOS platforms.</p>
+    <div class="bg-gray-800 p-4 rounded-xl mb-4">
+      <h3 class="text-xl font-bold text-blue-400">Codebase Migration: Native Android → Flutter</h3>
+      <p class="mt-2">Led R&D and progressive rewrite of the company's existing Android app to Flutter, enabling faster development and cross-platform support.</p>
+      <p class="mt-1">Worked closely with the team to refactor key modules, adapt native components to Flutter, and ensure consistent performance across Android and iOS platforms.</p>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>📬 Contact</h2>
-    <p>Email: <a href="mailto:amirulazim7968@gmail.com">amirulazim7968@gmail.com</a></p>
-    <p>
-      <a href="https://www.linkedin.com/in/amirul-azim-abdul-kuthoos-26a566241/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/azim2714" target="_blank">GitHub</a>
-    </p>
+  <section class="max-w-4xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-semibold text-blue-300 mb-4">📬 Contact</h2>
+    <p>Email: <a href="mailto:amirulazim7968@gmail.com" class="text-blue-400 hover:underline">amirulazim7968@gmail.com</a></p>
+    <div class="mt-2 space-x-4">
+      <a href="https://www.linkedin.com/in/amirul-azim-abdul-kuthoos-26a566241/" target="_blank" class="text-blue-400 hover:underline">LinkedIn</a>
+      <a href="https://github.com/amirulazim7968" target="_blank" class="text-blue-400 hover:underline">GitHub</a>
+    </div>
   </section>
 
 </body>
