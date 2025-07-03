@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amirul Azim | Software Engineer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('images/background.png');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.1;
+        z-index: -1;
+      }
+    </style>
   </head>
   <body class="bg-gray-900 text-gray-200 font-sans">
     <div class="container mx-auto px-4 py-8 max-w-4xl">
-      <header class="mb-12">
-        <h1 class="text-4xl font-bold text-blue-400">Amirul Azim</h1>
-        <h2 class="text-xl text-gray-400">Software Engineer</h2>
+      <header class="mb-12 text-center">
+        <h1 class="text-4xl sm:text-5xl font-bold text-blue-400 drop-shadow-lg">Amirul Azim</h1>
+        <h2 class="text-xl sm:text-2xl text-gray-300 mt-2 drop-shadow">Software Engineer</h2>
       </header>
 
       <section class="mb-12">
@@ -38,118 +53,81 @@
 
       <section class="mb-12">
         <h3 class="text-2xl font-semibold text-blue-300 mb-4">🛠️ Tech Stack & Skills</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <h4 class="font-bold text-gray-100">💻 Programming Languages</h4>
-            <ul class="list-disc list-inside">
-              <li>Dart, Java, C++, C#, Swift</li>
-              <li>TypeScript, JavaScript</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-bold text-gray-100">📱 Mobile App Development</h4>
-            <ul class="list-disc list-inside">
-              <li>Flutter (Cross-platform: Android & iOS)</li>
-              <li>React Native</li>
-              <li>Native Android (Java)</li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-bold text-gray-100">🌐 Web Development</h4>
-            <ul class="list-disc list-inside">
-              <li>React.js, Vue.js, Node.js</li>
-              <li>Tailwind CSS</li>
-              <li>REST API Integration</li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-bold text-gray-100">☁️ Cloud & Tools</h4>
-            <ul class="list-disc list-inside">
-              <li>Amazon Web Services (AWS)</li>
-              <li>Microsoft Office</li>
-              <li>Git, GitHub, VS Code, Android Studio, Xcode</li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-bold text-gray-100">🧠 Others</h4>
-            <ul class="list-disc list-inside">
-              <li>AI Prompt Engineering (Code Evaluation)</li>
-              <li>Software Development Life Cycle (SDLC)</li>
-              <li>Research & Usable Security in Web Systems</li>
-            </ul>
-          </div>
-        </div>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>Programming Languages:</strong> Dart, Java, C++, C#, Swift, TypeScript, JavaScript, SQL</li>
+          <li><strong>Mobile App Development:</strong> Flutter, React Native, Native Android (Java)</li>
+          <li><strong>Web Development:</strong> React.js, Vue.js, Node.js, Tailwind CSS, REST API Integration</li>
+          <li><strong>Cloud & Tools:</strong> AWS, Microsoft Office, Git, GitHub, VS Code, Android Studio, Xcode</li>
+          <li><strong>Others:</strong> AI Prompt Engineering (Code Evaluation), SDLC, Research & Usable Security in Web Systems</li>
+        </ul>
       </section>
 
       <section class="mb-12">
         <h3 class="text-2xl font-semibold text-blue-300 mb-4">📱 Projects</h3>
-
         <p class="mb-6">
-          My overarching project involved rewriting the company’s codebase from Native Android to Flutter. This began with R&D, identifying suitable patterns and tools for migration, followed by incrementally transitioning features and components. After the core was migrated, I continued to work closely with my team to build, enhance, and maintain Flutter apps for our clients.
+          My overarching project was to lead the transition of the company’s mobile codebase from native Android to Flutter.
+          This involved conducting R&D, setting up the Flutter architecture, rewriting components iteratively, and contributing to full-feature development.
         </p>
 
-        <!-- Repeat for each project -->
-        <div class="mb-8">
-          <h4 class="text-xl font-bold text-blue-200">CheckpointSpot App (React Native)</h4>
-          <p class="mb-2">
-            A sports event app where users can browse and register for events, purchase merchandise, get event reminders, view event details (like timing and standings), and receive e-certificates.
-          </p>
-          <p><span class="font-bold text-white">My Role:</span> I managed this app, made changes, added features, and fixed bugs with my supervisor. We were the only two mobile developers at our startup.</p>
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
-            <img src="images/checkpointspot.jpg" class="rounded-lg w-full max-h-80 object-contain" />
-            <img src="images/checkpointspot (2).jpg" class="rounded-lg w-full max-h-80 object-contain" />
+        <!-- Project: CheckpointSpot -->
+        <div class="mb-10">
+          <h4 class="text-xl font-semibold text-blue-200">CheckpointSpot App (React Native)</h4>
+          <p class="mb-2">A sports event app for browsing events, signing up, purchasing merchandise, and viewing event-day details including timing, standings, and e-certificates.</p>
+          <p class="font-semibold">My Role:</p>
+          <p class="mb-2">Managed the app, implemented features, and fixed bugs in collaboration with my supervisor (we were the only mobile devs in the startup).</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-2">
+            <img src="images/checkpointspot.jpg" alt="CheckpointSpot Screenshot" class="rounded shadow max-w-full h-auto">
+            <img src="images/checkpointspot (2).jpg" alt="CheckpointSpot Screenshot" class="rounded shadow max-w-full h-auto">
           </div>
         </div>
 
-        <div class="mb-8">
-          <h4 class="text-xl font-bold text-blue-200">HWC Coffee (Flutter)</h4>
-          <p class="mb-2">
-            A loyalty-focused mobile application for Malaysia’s first specialty coffee chain.
-            Users can track loyalty points, redeem digital vouchers, view transaction
-            history, and receive real-time promotions.
-          </p>
-          <p><span class="font-bold text-white">My Role:</span> Contributed to frontend design, managed the app, added features, and fixed bugs with a 3-person team.</p>
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
-            <img src="images/hwc (1).png" class="rounded-lg w-full max-h-80 object-contain" />
-            <img src="images/hwc (4).png" class="rounded-lg w-full max-h-80 object-contain" />
-            <img src="images/hwc (5).png" class="rounded-lg w-full max-h-80 object-contain" />
+        <!-- Project: HWC Coffee -->
+        <div class="mb-10">
+          <h4 class="text-xl font-semibold text-blue-200">HWC Coffee (Flutter)</h4>
+          <p class="mb-2">Loyalty app for Malaysia’s first specialty coffee chain, offering digital vouchers, points tracking, transaction history, promotions, and store info.</p>
+          <p class="font-semibold">My Role:</p>
+          <p class="mb-2">Worked on front-end design, app management, and ongoing maintenance with a team of 3.</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-2">
+            <img src="images/hwc (1).png" alt="HWC Coffee Screenshot" class="rounded shadow max-w-full h-auto">
+            <img src="images/hwc (4).png" alt="HWC Coffee Screenshot" class="rounded shadow max-w-full h-auto">
+            <img src="images/hwc (5).png" alt="HWC Coffee Screenshot" class="rounded shadow max-w-full h-auto">
           </div>
         </div>
 
-        <div class="mb-8">
-          <h4 class="text-xl font-bold text-blue-200">Wonders Cafe (Flutter)</h4>
-          <p class="mb-2">
-            Enables a fully contactless café experience. Users can browse menus, place
-            orders, pay, book event spaces, redeem vouchers, and earn rewards.
-          </p>
-          <p><span class="font-bold text-white">My Role:</span> Contributed to frontend UI, implemented order and booking flows, and handled bug fixing with a 3-person team.</p>
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
-            <img src="images/wonders (1).png" class="rounded-lg w-full max-h-80 object-contain" />
-            <img src="images/wonders (2).png" class="rounded-lg w-full max-h-80 object-contain" />
-            <img src="images/wonders (3).png" class="rounded-lg w-full max-h-80 object-contain" />
-            <img src="images/wonders (4).png" class="rounded-lg w-full max-h-80 object-contain" />
+        <!-- Project: Wonders Cafe -->
+        <div class="mb-10">
+          <h4 class="text-xl font-semibold text-blue-200">Wonders Café (Flutter)</h4>
+          <p class="mb-2">A fully contactless café app for ordering, payments, event booking, and loyalty rewards — focused on user convenience and experience.</p>
+          <p class="font-semibold">My Role:</p>
+          <p class="mb-2">Helped with UI/UX design, feature integration, and ongoing app management within a 3-person team.</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-2">
+            <img src="images/wonders (1).png" alt="Wonders Cafe Screenshot" class="rounded shadow max-w-full h-auto">
+            <img src="images/wonders (2).png" alt="Wonders Cafe Screenshot" class="rounded shadow max-w-full h-auto">
+            <img src="images/wonders (3).png" alt="Wonders Cafe Screenshot" class="rounded shadow max-w-full h-auto">
+            <img src="images/wonders (4).png" alt="Wonders Cafe Screenshot" class="rounded shadow max-w-full h-auto">
           </div>
         </div>
 
-        <div class="mb-8">
-          <h4 class="text-xl font-bold text-blue-200">Marrybrown Mobile App (Native Android)</h4>
-          <p class="mb-2">
-            Offers contactless ordering, in-app deals, birthday rewards, and loyalty points for a major fast-food brand in Malaysia.
-          </p>
-          <p><span class="font-bold text-white">My Role:</span> Provided ongoing maintenance and bug fixes to ensure stability of the native Android app.</p>
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
-            <img src="images/marrybrown (1).jpg" class="rounded-lg w-full max-h-80 object-contain" />
-            <img src="images/marrybrown (4).jpg" class="rounded-lg w-full max-h-80 object-contain" />
-            <img src="images/marrybrown (5).jpg" class="rounded-lg w-full max-h-80 object-contain" />
+        <!-- Project: Marrybrown -->
+        <div class="mb-10">
+          <h4 class="text-xl font-semibold text-blue-200">Marrybrown App (Native Android)</h4>
+          <p class="mb-2">A contactless food ordering app offering in-app deals, mobile ordering, event booking, and a points-based rewards system for Marrybrown customers in Malaysia.</p>
+          <p class="font-semibold">My Role:</p>
+          <p class="mb-2">Assisted with bug fixes and maintenance tasks during the app lifecycle.</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-2">
+            <img src="images/marrybrown (1).jpg" alt="Marrybrown Screenshot" class="rounded shadow max-w-full h-auto">
+            <img src="images/marrybrown (4).jpg" alt="Marrybrown Screenshot" class="rounded shadow max-w-full h-auto">
+            <img src="images/marrybrown (5).jpg" alt="Marrybrown Screenshot" class="rounded shadow max-w-full h-auto">
           </div>
         </div>
       </section>
 
       <section>
-        <h3 class="text-2xl font-semibold text-blue-300 mb-4">📬 Contact</h3>
-        <p>Email: <a href="mailto:amirulazim7968@gmail.com" class="text-blue-400">amirulazim7968@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/amirul-azim-abdul-kuthoos-26a566241/" class="text-blue-400">amirul-azim-abdul-kuthoos</a></p>
+        <h3 class="text-2xl font-semibold text-blue-300 mb-4">📫 Contact</h3>
+        <ul>
+          <li>Email: <a href="mailto:amirulazim7968@gmail.com" class="text-blue-400 hover:underline">amirulazim7968@gmail.com</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/amirul-azim-abdul-kuthoos-26a566241/" class="text-blue-400 hover:underline" target="_blank">amirul-azim-abdul-kuthoos</a></li>
+        </ul>
       </section>
     </div>
   </body>
